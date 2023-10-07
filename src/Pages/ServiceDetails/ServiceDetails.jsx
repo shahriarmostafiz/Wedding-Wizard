@@ -1,8 +1,11 @@
+import { useParams } from "react-router-dom";
 
 const ServiceDetails = () => {
+    const { id } = useParams()
     return (
+
         <div>
-            ServiceDetails
+            ServiceDetails of id {id}
         </div>
     );
 };

@@ -1,10 +1,13 @@
 import { useContext } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FcGoogle } from 'react-icons/fc'
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 const Login = () => {
+    const location = useLocation()
+    console.log(location)
+    const navigate = useNavigate()
     const { logIn } = useContext(AuthContext)
     const toastInfo = {
         position: "top-center",
@@ -25,7 +28,8 @@ const Login = () => {
         logIn(email, password)
             .then(res => {
                 console.log(res.user)
-                return toast.success('logged in ', toastInfo)
+                toast.success('logged in ', toastInfo)
+                navigate(location?.state ? location.state : '/')
             })
             .catch(err => {
                 console.log(err.message);

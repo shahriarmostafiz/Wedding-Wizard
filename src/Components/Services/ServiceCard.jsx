@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom';
+import { Link, Navigate, useLocation } from 'react-router-dom';
 
 const ServiceCard = ({ service }) => {
     console.log('this', service);
@@ -14,7 +14,7 @@ const ServiceCard = ({ service }) => {
                 <h1 className="text-lg font-medium">{title}</h1>
                 <p>{details}</p>
                 <p>Starts From $ {price}</p>
-                <Link to={`/details/${id}`} ><button className='btn rounded-full btn-outline btn-error'> Select Options </button></Link >
+                <Link to={`/service/${id}`} ><button className='btn rounded-full btn-outline btn-error'> Select Options </button></Link >
             </div>
         </div>
     );

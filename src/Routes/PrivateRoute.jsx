@@ -1,8 +1,13 @@
 import PropTypes from 'prop-types'
 import { useContext } from 'react';
 import { AuthContext } from '../AuthProvider/AuthProvider';
+import { Navigate, useLocation } from 'react-router-dom';
 const PrivateRoute = ({ children }) => {
-    const { user } = useContext(AuthContext)
+    const { user, loading } = useContext(AuthContext)
+    const location = useLocation()
+    if (loading) {
+        return <h1 className='text-center'>loading</h1>
+    }
     if (user) {
         return (
             <div>
@@ -10,7 +15,7 @@ const PrivateRoute = ({ children }) => {
             </div>
         );
     }
-    return <h1>its a secret </h1>
+    return <Navigate state={location.pathname} to={'/login'}></Navigate>
 
 }
 
