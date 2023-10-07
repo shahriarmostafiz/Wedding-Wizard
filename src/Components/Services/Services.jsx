@@ -1,7 +1,7 @@
 import ServiceCard from "./ServiceCard";
 import PropTypes from 'prop-types'
 const Services = ({ services }) => {
-    console.log('ser', services);
+
     return (
         <div>
             <h1 className="text-5xl text-center my-5 font-special">Our Services</h1>

@@ -8,7 +8,7 @@ const ServiceDetails = () => {
     const allData = useLoaderData()
     console.log(allData)
     const thisData = allData?.filter(data => data.id === idInt)[0]
-    const { title, id: serviceId, img, price, details, packages } = thisData
+    const { title, details, packages } = thisData
 
     console.log('this data', thisData)
     return (

@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const Register = () => {
     const { signUp, update } = useContext(AuthContext)
     const navigate = useNavigate()
-    const [error, setError] = useState(null)
+    const [error, setError] = useState('')
     const toastInfo = {
         position: "top-center",
         autoClose: 5000,
@@ -27,8 +27,8 @@ const Register = () => {
         console.log(email, thispassword);
         const passwordRegex = /^(?=.*[A-Z])(?=.*[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]).{6,}$/
         if (!passwordRegex.test(thispassword)) {
-            setError('Password Must Contain At least One Capital letter and one Special Character ')
-            return toast.error(error, toastInfo)
+            toast.error('Password Must Contain At least One Capital letter and one Special Character ', toastInfo)
+            return
         }
         setError(null)
         signUp(email, thispassword)

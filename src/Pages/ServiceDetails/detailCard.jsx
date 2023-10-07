@@ -1,4 +1,6 @@
+import PropTypes from 'prop-types'
 import { saveTheService } from "../../Local Storage/localStorage";
+
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 const DetailCard = ({ thisPackage }) => {
@@ -110,3 +112,6 @@ const DetailCard = ({ thisPackage }) => {
 };
 
 export default DetailCard;
+DetailCard.propTypes = {
+    thisPackage: PropTypes.object
+}
