@@ -3,7 +3,7 @@ const banner = 'https://i.ibb.co/6md9kxH/2111-w015-n001-617-B-p15-617.jpg'
 
 const Blog = () => {
     return (
-        <div className='lg:max-w-7xl lg:mx-auto'>
+        <div className='lg:max-w-7xl lg:mx-auto px-4'>
             <div className="relative z-0 flex flex-col justify-center items-center">
                 <div className="hero-overlay bg-black opacity-40 absolute h-full rounded-lg z-5"></div>
                 <img src={banner} className="w-full rounded-lg" alt="" />

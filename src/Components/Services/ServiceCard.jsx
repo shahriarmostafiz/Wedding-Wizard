@@ -6,7 +6,7 @@ const ServiceCard = ({ service }) => {
     console.log('this', service);
     const { title, id, img, price, details } = service
     return (
-        <div className='w-96 p-4 shadow-xl  rounded-xl'>
+        <div className='md:w-80 lg:w-96 p-4 shadow-xl  rounded-xl'>
             <div className='h-[220px] flex justify-center pt-4'>
                 <img src={img} className='w-full rounded' alt="" />
             </div>

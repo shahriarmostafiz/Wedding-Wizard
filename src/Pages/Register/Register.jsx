@@ -27,6 +27,7 @@ const Register = () => {
         console.log(email, thispassword);
         const passwordRegex = /^(?=.*[A-Z])(?=.*[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]).{6,}$/
         if (!passwordRegex.test(thispassword)) {
+            setError('Password Must Contain At least One Capital letter and one Special Character')
             toast.error('Password Must Contain At least One Capital letter and one Special Character ', toastInfo)
             return
         }
@@ -36,7 +37,7 @@ const Register = () => {
                 console.log(res.user)
                 update(name, photo)
                 navigate('/')
-                return toast.success('signed up', toastInfo)
+                return toast.success('Signed up', toastInfo)
 
             })
             .catch(error => {
@@ -49,11 +50,10 @@ const Register = () => {
         <div>
             <div className="bg-white">
                 <div className="flex justify-center h-screen items-center">
-                    <div className="border lg:w-2/5 py-16 px-12  rounded">
-                        <h1 className="text-3xl text-yellow-400 font-bold px-8">Sign Up  </h1>
+                    <div className="border w-4/5 lg:w-2/5 py-16 lg:px-12  rounded">
+                        <h1 className="text-3xl text-rose-400 font-bold px-8">Sign Up Today  </h1>
                         <form onSubmit={handleRegister}>
                             <div className="p-8 space-y-4 w-full">
-
 
 
                                 <div className="border-b-2 border-black">
@@ -70,12 +70,12 @@ const Register = () => {
                                         type="password" placeholder="password" name="password" id="password" required />
                                 </div>
 
-                                <button type="submit" className="btn btn-warning w-full">SignUp  </button>
+                                <button type="submit" className="btn btn-error w-full">SignUp  </button>
                             </div>
                             {
                                 error && <p className="text-center text-red-600">{error}</p>
                             }
-                            <p className="text-center">Already have an account? <Link className="text-yellow-500" to={'/login'}>Login</Link></p>
+                            <p className="text-center">Already have an account? <Link className="text-rose-500 font-bold" to={'/login'}>Login</Link></p>
                         </form>
                     </div>
 

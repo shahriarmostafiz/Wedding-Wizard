@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import { Rating, Star, ThinStar } from '@smastrom/react-rating'
+import { Rating, Star } from '@smastrom/react-rating'
 import '@smastrom/react-rating/style.css'
 import { useState } from 'react';
 const ReviewCard = ({ review }) => {

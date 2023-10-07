@@ -1,3 +1,4 @@
+import Navbar2 from "../../Components/NavBar/NavBar2";
 
 const AboutUs = () => {
     return (
@@ -22,6 +23,7 @@ const AboutUs = () => {
                 <br />
                 <span className='block'>
                     Join us on this incredible journey of love, where every wedding becomes a masterpiece of tradition, elegance, and everlasting enchantment. Let The Wedding Wizard transform your dreams into a magnificent reality, and together, we will create memories that last a lifetime. Your story is unique, and your wedding should be too. Discover the magic of The Wedding Wizard today, where love meets artistry, and dreams come to life.</span></p>
+            <Navbar2></Navbar2>
         </div>
     );
 };
