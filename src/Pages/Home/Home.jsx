@@ -10,11 +10,14 @@ const Home = () => {
     const data = useLoaderData()
     console.log(data);
     return (
-        <div className="lg:max-w-7xl lg:mx-auto bg-white">
-            <Banner></Banner>
-            <Services services={data} ></Services>
-            <Reviews></Reviews>
-            <Album></Album>
+
+        <div className="bg-white">
+            <div className="lg:max-w-7xl lg:mx-auto bg-white">
+                <Banner></Banner>
+                <Services services={data} ></Services>
+                <Reviews></Reviews>
+                <Album></Album>
+            </div>
         </div>
     );
 };

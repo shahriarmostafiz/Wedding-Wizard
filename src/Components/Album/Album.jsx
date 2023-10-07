@@ -19,7 +19,7 @@ const Album = () => {
     };
     return (
 
-        <div>
+        <div className='my-8' data-aos="zoom-in" data-aos-duration="1000">
 
             <div className=" my-8   text-center border-b-2 border-rose-400 p-4 w-fit mx-auto">
                 <h1 className="text-4xl md:text-7xl lg:text-5xl font-special ">Memories </h1>

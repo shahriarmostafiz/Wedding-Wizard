@@ -69,7 +69,7 @@ const Navbar = () => {
                     <div>
                         {user ? <div className='flex gap-2 items-center justify-center'>
                             <div className="dropdown dropdown-hover dropdown-end dropdown-bottom">
-                                <label tabIndex="0" className="cursor-pointer   m-1">{user.photoURL ? <img src={user.photoURL} className='rounded w-12' alt="" /> : user.displayName ? user.displayName : user.email}</label>
+                                <label tabIndex="0" className="cursor-pointer w-10  m-1">{user.photoURL ? <img src={user.photoURL} className='rounded w-10' alt="" /> : user.displayName ? user.displayName : user.email}</label>
                                 <ul tabIndex="0" className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-60">
                                     <li><a>{user.displayName}</a></li>
                                     <li><a>{user.email}</a></li>
