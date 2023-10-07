@@ -10,6 +10,7 @@ import ServiceDetails from '../Pages/ServiceDetails/ServiceDetails';
 import MySelection from '../Pages/MySelection/MySelection';
 import AboutUs from '../Pages/AboutUs/AboutUs';
 import Blog from '../Pages/Blog/Blog';
+import AllReview from '../Pages/AllReview/AllReview';
 
 const MainRoute = createBrowserRouter([{
     path: '/',
@@ -45,6 +46,11 @@ const MainRoute = createBrowserRouter([{
             path: '/mySelection',
             element: <PrivateRoute>
                 <MySelection></MySelection>
+            </PrivateRoute>
+        }, {
+            path: '/reviews',
+            element: <PrivateRoute>
+                <AllReview></AllReview>
             </PrivateRoute>
         }
     ]

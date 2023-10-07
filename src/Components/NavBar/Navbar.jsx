@@ -4,11 +4,25 @@ import { Link, NavLink } from 'react-router-dom';
 import './Nav.css'
 import { useContext } from 'react';
 import { AuthContext } from '../../AuthProvider/AuthProvider';
+import { toast } from 'react-toastify';
+const toastInfo = {
+    position: "top-center",
+    autoClose: 5000,
+    hideProgressBar: true,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "light",
+}
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext)
     const handleLogOut = () => {
         logOut()
-            .then()
+            .then(() => {
+                return toast.error('logged out', toastInfo)
+
+            })
             .catch(err => console.log(err.message))
     }
     const links = <>
@@ -17,7 +31,10 @@ const Navbar = () => {
         <li className='hover: hover:border-b-2 hover:border-rose-500 font-medium '><NavLink to={'/blog'}>Blog</NavLink></li>
         {
             user &&
-            <li className='hover: hover:border-b-2 hover:border-rose-500 font-medium '><NavLink to={'/mySelection'}>My Selections</NavLink></li>
+            <>
+                <li className='hover: hover:border-b-2 hover:border-rose-500 font-medium '><NavLink to={'/mySelection'}>My Selections</NavLink></li>
+                <li className='hover: hover:border-b-2 hover:border-rose-500 font-medium '><NavLink to={'/reviews'}>All the Reviews </NavLink></li>
+            </>
 
         }    </>
     return (
@@ -39,7 +56,7 @@ const Navbar = () => {
             <div>
                 {user ? <div className='flex gap-2 items-center justify-center'>
                     <div className="dropdown dropdown-hover dropdown-end dropdown-bottom">
-                        <label tabIndex="0" className="cursor-pointer  m-1">{user.photoURL ? <img src={user.photoURL} className='rounded w-12' alt="" /> : user.displayName ? user.displayName : user.email}</label>
+                        <label tabIndex="0" className="cursor-pointer   m-1">{user.photoURL ? <img src={user.photoURL} className='rounded w-12' alt="" /> : user.displayName ? user.displayName : user.email}</label>
                         <ul tabIndex="0" className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-60">
                             <li><a>{user.displayName}</a></li>
                             <li><a>{user.email}</a></li>
