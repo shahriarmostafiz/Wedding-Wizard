@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "title": "Venue Selection",
+    "img": "https://i.ibb.co/Yt2gH58/venu.jpg",
+    "price": 3000,
+    "details": "We help you find the perfect venue for your dream wedding.",
+    "packages": [
+      {
+        "package_name": "Basic",
+        "package_price": 3000,
+        "package_details": "Venue suggestions and booking assistance."
+      },
+      {
+        "package_name": "Standard",
+        "package_price": 5000,
+        "package_details": "Venue suggestions, booking assistance, and decoration options."
+      },
+      {
+        "package_name": "Premium",
+        "package_price": 8000,
+        "package_details": "Venue suggestions, booking assistance, decoration options, and catering recommendations."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Catering Services",
+    "img": "https://i.ibb.co/z2RD0WM/catering-2.webp",
+    "price": 5000,
+    "details": "Delicious and diverse catering options for your wedding guests.",
+    "packages": [
+      {
+        "package_name": "Silver",
+        "package_price": 5000,
+        "package_details": "Basic catering for your guests."
+      },
+      {
+        "package_name": "Gold",
+        "package_price": 8000,
+        "package_details": "Variety of cuisines and dessert options."
+      },
+      {
+        "package_name": "Platinum",
+        "package_price": 12000,
+        "package_details": "Premium catering with gourmet dishes and personalized service."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Photography and Videography",
+    "img": "https://i.ibb.co/CtmsBRP/photography.jpg",
+    "price": 4000,
+    "details": "Capture your special moments with professional photography and videography.",
+    "packages": [
+      {
+        "package_name": "Basic",
+        "package_price": 4000,
+        "package_details": "Photography coverage of the ceremony."
+      },
+      {
+        "package_name": "Standard",
+        "package_price": 7000,
+        "package_details": "Photography and videography coverage of the ceremony."
+      },
+      {
+        "package_name": "Premium",
+        "package_price": 12000,
+        "package_details": "Photography and videography coverage of the ceremony, pre-wedding shoot, and drone footage."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Floral Decoration",
+    "img": "https://i.ibb.co/XpDSTvv/flowers2.jpg",
+    "price": 2500,
+    "details": "Elegant and beautiful floral decorations to enhance your wedding venue.",
+    "packages": [
+      {
+        "package_name": "Basic",
+        "package_price": 2500,
+        "package_details": "Floral decorations for the ceremony area."
+      },
+      {
+        "package_name": "Standard",
+        "package_price": 4500,
+        "package_details": "Floral decorations for the ceremony area and reception hall."
+      },
+      {
+        "package_name": "Premium",
+        "package_price": 8000,
+        "package_details": "Elaborate floral decorations for the entire venue."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Entertainment Services",
+    "img": "https://i.ibb.co/Qj1bFzk/110-wedding-entertainment-ideas.png",
+    "price": 3500,
+    "details": "Keep your guests entertained with live music, DJs, and more.",
+    "packages": [
+      {
+        "package_name": "Basic",
+        "package_price": 3500,
+        "package_details": "Live music performance during the reception."
+      },
+      {
+        "package_name": "Standard",
+        "package_price": 6000,
+        "package_details": "Live music performance during the ceremony and reception."
+      },
+      {
+        "package_name": "Premium",
+        "package_price": 10000,
+        "package_details": "Live music, DJ, and entertainment activities for the entire event."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Event Planning and Coordination",
+    "img": "https://i.ibb.co/wrtfwGq/rs-w-1240-h-620-cg-true.webp",
+    "price": 6000,
+    "details": "Comprehensive event planning and coordination services to make your wedding stress-free.",
+    "packages": [
+      {
+        "package_name": "Basic",
+        "package_price": 6000,
+        "package_details": "Assistance with event planning and coordination."
+      },
+      {
+        "package_name": "Standard",
+        "package_price": 10000,
+        "package_details": "Event planning, coordination, and vendor management."
+      },
+      {
+        "package_name": "Premium",
+        "package_price": 15000,
+        "package_details": "Full-service event planning, coordination, and personalized wedding design."
+      }
+    ]
+  }
+]
