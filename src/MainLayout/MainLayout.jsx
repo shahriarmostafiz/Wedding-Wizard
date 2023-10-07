@@ -5,7 +5,7 @@ import { ToastContainer } from 'react-toastify';
 
 const MainLayout = () => {
     return (
-        <div>
+        <div className='font-poppins'>
             <Navbar></Navbar>
             <Outlet></Outlet>
             <ToastContainer />
