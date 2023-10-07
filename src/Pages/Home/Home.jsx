@@ -10,7 +10,7 @@ const Home = () => {
     const data = useLoaderData()
     console.log(data);
     return (
-        <div className="lg:max-w-7xl lg:mx-auto">
+        <div className="lg:max-w-7xl lg:mx-auto bg-white">
             <Banner></Banner>
             <Services services={data} ></Services>
             <Reviews></Reviews>
