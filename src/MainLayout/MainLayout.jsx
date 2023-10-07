@@ -2,6 +2,7 @@
 import { Outlet } from 'react-router-dom';
 import Navbar from '../Components/NavBar/Navbar';
 import { ToastContainer } from 'react-toastify';
+import Footer from '../Components/Footer/Footer';
 
 const MainLayout = () => {
     return (
@@ -9,7 +10,7 @@ const MainLayout = () => {
             <Navbar></Navbar>
             <Outlet></Outlet>
             <ToastContainer />
-
+            <Footer></Footer>
         </div>
     );
 };

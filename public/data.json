@@ -7,8 +7,8 @@
     "details": "We help you find the perfect venue for your dream wedding.",
     "packages": [
       {
-        "package_id": "silver",
-        "package_name": "Silver Package",
+        "package_id": "1",
+        "package_name": "Venu  Silver Package",
         "package_features": [
           "Access to the venue for 4 hours",
           "Basic decorations included",
@@ -18,8 +18,8 @@
         "package_image": "silver_package.jpg"
       },
       {
-        "package_id": "gold",
-        "package_name": "Gold Package",
+        "package_id": "2",
+        "package_name": "Venu  Gold Package",
         "package_features": [
           "Access to the venue for 8 hours",
           "Premium decorations included",
@@ -29,8 +29,8 @@
         "package_image": "gold_package.jpg"
       },
       {
-        "package_id": "platinum",
-        "package_name": "Platinum Package",
+        "package_id": "3",
+        "package_name": "Venu Platinum Package",
         "package_features": [
           "Access to the venue for 12 hours",
           "Luxury decorations included",
@@ -50,8 +50,8 @@
     "details": "Delicious and diverse catering options for your wedding guests.",
     "packages": [
       {
-        "package_id": "silver",
-        "package_name": "Silver Package",
+        "package_id": "21",
+        "package_name": "Catering Silver Package",
         "package_features": [
           "Buffet-style dinner for up to 100 guests",
           "Choice of 2 main courses and 3 sides",
@@ -61,8 +61,8 @@
         "package_image": "silver_package.jpg"
       },
       {
-        "package_id": "gold",
-        "package_name": "Gold Package",
+        "package_id": "22",
+        "package_name": "Catering Gold Package",
         "package_features": [
           "Plated dinner for up to 150 guests",
           "Choice of 3 main courses and 4 sides",
@@ -72,8 +72,8 @@
         "package_image": "gold_package.jpg"
       },
       {
-        "package_id": "platinum",
-        "package_name": "Platinum Package",
+        "package_id": "23",
+        "package_name": "Catering Platinum Package",
         "package_features": [
           "Gourmet buffet-style dinner for up to 200 guests",
           "Customizable menu with chef's specialties",
@@ -92,8 +92,8 @@
     "details": "Capture your special moments with professional photography and videography.",
     "packages": [
       {
-        "id": "basic",
-        "package_name": "Basic Package",
+        "package_id": "31",
+        "package_name": "Photography Basic Package",
         "package_features": [
           "Up to 2 hours of photography coverage",
           "50 edited high-resolution photos",
@@ -103,8 +103,8 @@
         "package_image": "basic_package.jpg"
       },
       {
-        "id": "standard",
-        "package_name": "Standard Package",
+        "package_id": "32",
+        "package_name": "Photography Standard Package",
         "package_features": [
           "Up to 4 hours of photography coverage",
           "100 edited high-resolution photos",
@@ -114,8 +114,8 @@
         "package_image": "standard_package.jpg"
       },
       {
-        "id": "premium",
-        "package_name": "Premium Package",
+        "package_id": "33",
+        "package_name": "Photography Premium Package",
         "package_features": [
           "Full-day coverage",
           "200 edited high-resolution photos",
@@ -134,7 +134,7 @@
     "details": "Elegant and beautiful floral decorations to enhance your wedding venue.",
     "packages": [
       {
-        "package_id": "elegant-floral",
+        "package_id": "41",
         "package_name": "Elegant Floral Package",
         "package_features": [
           "Floral arrangements for the ceremony and reception",
@@ -145,7 +145,7 @@
         "package_image": "elegant_floral_package.jpg"
       },
       {
-        "package_id": "classic-roses",
+        "package_id": "42",
         "package_name": "Classic Roses Package",
         "package_features": [
           "Red and white rose arrangements for the ceremony",
@@ -156,7 +156,7 @@
         "package_image": "classic_roses_package.jpg"
       },
       {
-        "package_id": "garden-romance",
+        "package_id": "43",
         "package_name": "Garden Romance Package",
         "package_features": [
           "Lush garden-style floral arrangements",
@@ -176,7 +176,7 @@
     "details": "Keep your guests entertained with live music, DJs, and more.",
     "packages": [
       {
-        "package_id": "silver",
+        "package_id": "51",
         "package_name": "Silver Entertainment Package",
         "package_features": [
           "Professional DJ service",
@@ -187,7 +187,7 @@
         "package_image": "silver_package.jpg"
       },
       {
-        "package_id": "gold",
+        "package_id": "52",
         "package_name": "Gold Entertainment Package",
         "package_features": [
           "Live band performance",
@@ -198,7 +198,7 @@
         "package_image": "gold_package.jpg"
       },
       {
-        "package_id": "platinum",
+        "package_id": "53",
         "package_name": "Platinum Entertainment Package",
         "package_features": [
           "Live band and DJ combo",
@@ -218,8 +218,8 @@
     "details": "Comprehensive event planning and coordination services to make your wedding stress-free.",
     "packages": [
       {
-        "package_id": "economy",
-        "package_name": "Economy Package",
+        "package_id": "61",
+        "package_name": "Economy Event Package",
         "package_features": [
           "Venue selection and booking",
           "Basic decor setup",
@@ -229,8 +229,8 @@
         "package_image": "economy_package.jpg"
       },
       {
-        "package_id": "standard",
-        "package_name": "Standard Package",
+        "package_id": "62",
+        "package_name": "Standard Event Package",
         "package_features": [
           "Venue selection and booking",
           "Full decor setup",
@@ -240,8 +240,8 @@
         "package_image": "standard_package.jpg"
       },
       {
-        "package_id": "premium",
-        "package_name": "Premium Package",
+        "package_id": "63",
+        "package_name": "Premium Event Package",
         "package_features": [
           "Venue selection and booking",
           "Full decor setup",

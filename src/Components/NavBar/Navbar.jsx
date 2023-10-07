@@ -15,8 +15,11 @@ const Navbar = () => {
         <li className='hover: hover:border-b-2 hover:border-rose-500 font-medium '><NavLink to={'/'}>Home</NavLink></li>
         <li className='hover: hover:border-b-2 hover:border-rose-500 font-medium '><NavLink to={'/about'}>About Us </NavLink></li>
         <li className='hover: hover:border-b-2 hover:border-rose-500 font-medium '><NavLink to={'/services'}>Services</NavLink></li>
-        <li className='hover: hover:border-b-2 hover:border-rose-500 font-medium '><NavLink to={'/contact'}>Contact US</NavLink></li>
-    </>
+        {
+            user &&
+            <li className='hover: hover:border-b-2 hover:border-rose-500 font-medium '><NavLink to={'/mySelection'}>My Selections</NavLink></li>
+
+        }    </>
     return (
         <div className="flex flex-col md:flex-row items-center justify-between lg:max-w-7xl mx-auto space-y-4 md:space-y-0 py-3">
             {/* logo */}
@@ -34,7 +37,16 @@ const Navbar = () => {
             </div>
             {/* login button  */}
             <div>
-                {user ? <button onClick={handleLogOut}>Log Out </button>
+                {user ? <div className='flex gap-2 items-center justify-center'>
+                    <div className="dropdown dropdown-end dropdown-bottom">
+                        <label tabIndex="0" className="btn btn-sm  m-1">{user.photoURL ? user.photoURL : user.displayName ? user.displayName : user.email}</label>
+                        <ul tabIndex="0" className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-60">
+                            <li><a>{user.email}</a></li>
+                            <li><a>{user.displayName}</a></li>
+                        </ul>
+                    </div>
+                    <button onClick={handleLogOut}>Log Out </button>
+                </div>
                     : <Link to={'/login'}>
                         <button className='btn btn-outline btn-error px-8'> Login </button>
                     </Link>}

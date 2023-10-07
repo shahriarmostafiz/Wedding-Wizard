@@ -8,7 +8,7 @@ const Login = () => {
     const location = useLocation()
     console.log(location)
     const navigate = useNavigate()
-    const { logIn } = useContext(AuthContext)
+    const { logIn, GoogleSignIn } = useContext(AuthContext)
     const toastInfo = {
         position: "top-center",
         autoClose: 5000,
@@ -33,19 +33,19 @@ const Login = () => {
             })
             .catch(err => {
                 console.log(err.message);
-                return toast.error(err.message, {
-                    position: "top-center",
-                    autoClose: 5000,
-                    hideProgressBar: true,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                    theme: "light",
-                })
+                return toast.error(err.message, toastInfo)
             })
     }
     const handleGoogleLogin = () => {
+        GoogleSignIn()
+            .then(() => {
+                toast.success('logged in ', toastInfo)
+                navigate(location?.state ? location.state : '/')
+            })
+            .catch(err => {
+                console.log(err.message)
+                return toast.error(err.message, toastInfo)
+            })
 
     }
     return (

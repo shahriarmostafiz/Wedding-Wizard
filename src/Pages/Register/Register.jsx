@@ -27,17 +27,17 @@ const Register = () => {
         console.log(email, thispassword);
         const passwordRegex = /^(?=.*[A-Z])(?=.*[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]).{6,}$/
         if (!passwordRegex.test(thispassword)) {
-
             setError('Password Must Contain At least One Capital letter and one Special Character ')
             return toast.error(error, toastInfo)
-
         }
         setError(null)
         signUp(email, thispassword)
             .then(res => {
                 console.log(res.user)
                 update(name, photo)
-                return toast.success('sign up', toastInfo)
+                navigate('/')
+                return toast.success('signed up', toastInfo)
+
             })
             .catch(error => {
                 console.log(error.message)

@@ -1,20 +1,23 @@
-import React from 'react';
+
 import PropTypes from 'prop-types'
-import { Link, Navigate, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const ServiceCard = ({ service }) => {
     console.log('this', service);
     const { title, id, img, price, details } = service
     return (
         <div className='w-96 p-4 shadow-xl  rounded-xl'>
-            <div className='h-[200px] flex justify-center'>
-                <img src={img} className='h-full' alt="" />
+            <div className='h-[220px] flex justify-center pt-4'>
+                <img src={img} className='w-full rounded' alt="" />
             </div>
-            <div>
-                <h1 className="text-lg font-medium">{title}</h1>
+            <div className='p-2 my-4 space-y-3'>
+                <h1 className="text-xl font-semibold">{title}</h1>
                 <p>{details}</p>
-                <p>Starts From $ {price}</p>
-                <Link to={`/service/${id}`} ><button className='btn rounded-full btn-outline btn-error'> Select Options </button></Link >
+                <p className='font-medium text-rose-500'>Starts From $ {price}</p>
+                <div>
+                    <Link to={`/service/${id}`} ><button className='btn rounded-full btn-outline btn-error btn-sm'> Select Options </button></Link >
+
+                </div>
             </div>
         </div>
     );
