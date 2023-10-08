@@ -11,6 +11,7 @@ const MainLayout = () => {
             <Outlet></Outlet>
             <ToastContainer />
             <Footer></Footer>
+
         </div>
     );
 };

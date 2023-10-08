@@ -37,7 +37,7 @@ const Login = () => {
             })
             .catch(err => {
                 console.log(err.message);
-                return toast.error(err.message, toastInfo)
+                return toast.error('Password or Email does not match please recheck', toastInfo)
             })
     }
     const handleGoogleLogin = () => {
@@ -47,7 +47,7 @@ const Login = () => {
                 navigate(location?.state ? location.state : '/')
             })
             .catch(err => {
-                console.log(err.message)
+                console.log(err)
                 return toast.error(err.message, toastInfo)
             })
 
@@ -56,7 +56,7 @@ const Login = () => {
         <div className="" >
             <div className="flex w-full flex-col justify-center min-h-[600px] items-center bg-white">
                 <div className="border w-4/5 lg:w-1/3 py-8 lg:py-16 rounded ">
-                    <h1 className="text-3xl font-semibold px-8 text-rose-400">Login </h1>
+                    <h1 className="text-3xl font-semibold px-8 text-rose-400">Login to Continue</h1>
                     <form onSubmit={handleLogin}>
                         <div className="p-8 space-y-8 w-full">
 

@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { AiOutlineEye } from 'react-icons/ai';
 import { AiOutlineEyeInvisible } from 'react-icons/ai';
 const Register = () => {
-    const { signUp, update } = useContext(AuthContext)
+    const { signUp, update, logOut } = useContext(AuthContext)
     const navigate = useNavigate()
     const [error, setError] = useState('')
     const toastInfo = {
@@ -39,9 +39,11 @@ const Register = () => {
             .then(res => {
                 console.log(res.user)
                 update(name, photo)
-                toast.success('Signed up', toastInfo)
+                toast.success('Registration completed Login to continue', toastInfo)
+                logOut()
+                    .then()
+                    .catch()
                 navigate('/login')
-
             })
             .catch(error => {
                 console.log(error.message)

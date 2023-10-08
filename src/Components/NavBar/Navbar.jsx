@@ -50,7 +50,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="btn btn-ghost normal-case text-xl">
-                        <div className="flex items-center gap-2 text-2xl text-rose-500 font-semibold ">
+                        <div className="flex items-center gap-1 md:gap-2 text-xl md:text-3xl text-rose-500 font-semibold ">
                             <h1 className="font-bold font-special ">
                                 Wedding Wizard
                             </h1>
@@ -67,27 +67,29 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end">
                     <div>
-                        {user ? <div className='flex gap-2 items-center justify-center'>
-                            {/* <div className="dropdown dropdown-hover dropdown-end dropdown-bottom">
-                                <label tabIndex="0" className="cursor-pointer w-9  m-1">{user.photoURL ? <img src={user.photoURL} className='rounded w-9' alt="userImage" /> : <h1>{user.email}</h1>}</label>
-                                <ul tabIndex="0" className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-60">
-                                    <li><a>{user.displayName}</a></li>
-                                    <li><a>{user.email}</a></li>
-                                </ul>
-                            </div> */}
+                        {user ? <div className='flex gap-1 md:gap-2 items-center justify-center'>
                             <div className='w-fit'>
-                                {user.photoURL ? <img src={user.photoURL} className='rounded w-8' alt="userImage" /> : <h1>{user.email}</h1>}
+                                {<img src={user.photoURL} className='rounded w-5 md:w-8' alt="userImage" />}
                             </div>
+                            <p className='text-gray-500 bg-rose-50 p-1  rounded md:text-base'>
+                                {user.displayName}
+                            </p>
                             <div>
-                                <p className='text-rose-gold'>
-                                    {user.displayName ? user.displayName : ''}
-                                </p>
+                                <button
+                                    className='btn btn-xs md:btn-sm btn-outline btn-error'
+                                    onClick={handleLogOut}>Log Out
+                                </button>
                             </div>
-                            <button className='btn btn-sm btn-outline btn-error' onClick={handleLogOut}>Log Out </button>
                         </div>
-                            : <Link to={'/login'}>
-                                <button className='btn btn-outline btn-error btn-sm md:px-8'> Login </button>
-                            </Link>}
+                            : <div className='flex gap-1 md:gap-2'>
+                                <Link to={'/login'}>
+                                    <button className='btn btn-outline btn-error btn-sm md:px-6'> Login </button>
+                                </Link>
+                                <Link to={'/register'}>
+                                    <button className='btn btn-outline btn-error btn-sm md:px-4'> Register </button>
+                                </Link>
+                            </div>
+                        }
                     </div>
                 </div>
             </div>

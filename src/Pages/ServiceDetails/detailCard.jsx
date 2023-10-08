@@ -103,7 +103,7 @@ const DetailCard = ({ thisPackage }) => {
                         data-ripple-dark="true"
                         onClick={handleService}
                     >
-                        Buy Now
+                        Add to Collection
                     </button>
                 </div>
             </div>

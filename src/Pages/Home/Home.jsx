@@ -6,6 +6,7 @@ import Services from "../../Components/Services/Services";
 import Reviews from "../../Components/Reviews/Reviews";
 import Album from "../../Components/Album/Album";
 
+
 const Home = () => {
     const data = useLoaderData()
     console.log(data);
@@ -17,6 +18,7 @@ const Home = () => {
                 <Services services={data} ></Services>
                 <Reviews></Reviews>
                 <Album></Album>
+
             </div>
         </div>
     );
