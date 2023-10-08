@@ -39,7 +39,7 @@ const Register = () => {
             .then(res => {
                 console.log(res.user)
                 update(name, photo)
-                navigate('/')
+                navigate('/login')
                 return toast.success('Signed up', toastInfo)
 
             })

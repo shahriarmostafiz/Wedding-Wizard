@@ -4,12 +4,12 @@ import { getAuth } from "firebase/auth";
 
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBre2BvNVK7RpWBRSlJTwCIMjNnWQUO3sE",
-  authDomain: "wedding-wizard.firebaseapp.com",
-  projectId: "wedding-wizard",
-  storageBucket: "wedding-wizard.appspot.com",
-  messagingSenderId: "869527672174",
-  appId: "1:869527672174:web:59b4af79ba4fdff8601d7f",
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID,
 };
 
 const app = initializeApp(firebaseConfig);

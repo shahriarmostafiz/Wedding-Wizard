@@ -10,6 +10,7 @@ export const AuthContext = createContext(null)
 const AuthProvider = ({ children }) => {
     const [user, setUser] = useState('')
     const [loading, setLoading] = useState(true)
+    const [loggedIn, setLoggedIn] = useState(false)
 
     //sign up 
     const signUp = (email, password) => {
@@ -46,7 +47,7 @@ const AuthProvider = ({ children }) => {
     }
 
 
-    const AuthInfo = { user, signUp, logIn, logOut, update, loading, GoogleSignIn }
+    const AuthInfo = { user, signUp, logIn, logOut, update, loading, GoogleSignIn, loggedIn, setLoggedIn }
 
     return (
         <AuthContext.Provider value={AuthInfo}>
