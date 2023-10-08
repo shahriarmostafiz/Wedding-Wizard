@@ -13,7 +13,7 @@ const Reviews = () => {
     // console.log('reviews', reviews);
     const navigate = useNavigate()
     return (
-        <div data-aos="fade-left">
+        <div data-aos="zoom-in-up" data-aos-duration="800">
             <h1 className="text-5xl font-special font-bold text-center">Messages from Our Clients </h1>
             <div className="flex flex-col items-center" >
                 <div className="grid grid-cols-1 gap-6  md:grid-cols-2 lg:grid-cols-3 my-6 md:my-8 lg:my-12">

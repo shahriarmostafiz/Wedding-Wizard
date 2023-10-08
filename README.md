@@ -1,8 +1,5 @@
-# React + Vite
+# Main features of the Project wedding Wizard is:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Implementation of Firebase Authentication
+- Implementation of react private routes based on Authentication
+- Implementation of AOS animation on the Home Page

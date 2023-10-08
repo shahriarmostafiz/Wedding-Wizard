@@ -6,7 +6,7 @@ const Services = ({ services }) => {
         <div>
             <h1 className="text-5xl text-center my-5 font-special">Our Services</h1>
 
-            <div className="flex justify-center" data-aos="fade-right">
+            <div className="flex justify-center" data-aos="zoom-in">
                 <div className="grid grid-cols-1 md:grid-cols-2   lg:grid-cols-3 gap-4 my-8 ">
                     {
                         services?.map(service => <ServiceCard key={service.id} service={service}></ServiceCard>)

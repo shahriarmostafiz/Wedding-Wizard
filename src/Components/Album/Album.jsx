@@ -19,9 +19,8 @@ const Album = () => {
     };
     return (
 
-        <div className='my-8' data-aos="zoom-in" data-aos-duration="1000">
-
-            <div className=" my-8   text-center border-b-2 border-rose-400 p-4 w-fit mx-auto">
+        <div className='my-8 lg:max-w-7xl' data-aos="zoom-in" data-aos-duration="800">
+            <div className=" mb-8 text-center border-b-2 border-rose-400 px-4 w-fit mx-auto">
                 <h1 className="text-4xl md:text-7xl lg:text-5xl font-special ">Memories </h1>
                 <p className="font-special text-2xl">Some of our beloved works </p>
             </div>
