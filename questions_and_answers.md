@@ -103,7 +103,7 @@ console.log(sayHi());
 #### Answer: B: `Hi there, undefined`
 
 <i>The function sayHi always expects a name parameter to be passed when being called . But we called the function with out any arguments.
-In js When we can functions without passing the expected arguments the parameters takes the value undefined
+In js, when we call functions without passing the expected arguments the parameters takes the value undefined
 so when called the function it returned `Hi there, undefined` </i>
 
 </p>
@@ -132,7 +132,7 @@ console.log(count);
 
 #### Answer: C :3
 
-<i>inside the loop we have a condition that the value of count will only increase if the array nums elements are truthy values , as the 0 is not a truthy the condition was not fullfilled , but it was fullfilled for the element 1 , 2 ,3 as a result the count was increased three times ,. Thus when we log the value of count to the console it will show 3</i>
+<i>Inside the loop we have a condition that the value of count will only increase if an elements of the array nums is truthy value , as the 0 is not a truthy the condition was not fullfilled , but it was fullfilled for the element 1 , 2 ,3 as a result the count was increased three times. Thus when we log the value of count to the console it will show 3</i>
 
 </p>
 </details>
