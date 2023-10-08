@@ -3,7 +3,7 @@ import { BiError } from "react-icons/bi";
 import Navbar from "../../Components/NavBar/Navbar";
 const ErrorPage = () => {
     const error = useRouteError()
-    console.log(error);
+
     return (
         <div className="bg-white">
             <Navbar></Navbar>

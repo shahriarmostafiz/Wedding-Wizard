@@ -6,11 +6,11 @@ const ServiceDetails = () => {
     const { id } = useParams()
     const idInt = parseInt(id)
     const allData = useLoaderData()
-    console.log(allData)
+    // console.log(allData)
     const thisData = allData?.filter(data => data.id === idInt)[0]
     const { title, details, packages } = thisData
 
-    console.log('this data', thisData)
+    // console.log('this data', thisData)
     return (
 
         <div className="lg:max-w-7xl lg:mx-auto p-4 ">

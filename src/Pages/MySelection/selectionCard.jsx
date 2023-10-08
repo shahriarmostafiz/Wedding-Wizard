@@ -1,5 +1,5 @@
-import React from 'react';
 
+import PropTypes from 'prop-types'
 const SelectionCard = ({ mySelection }) => {
     const { package_name, package_price, package_features } = mySelection
 
@@ -85,3 +85,6 @@ const SelectionCard = ({ mySelection }) => {
 };
 
 export default SelectionCard;
+SelectionCard.propTypes = {
+    mySelection: PropTypes.object
+}

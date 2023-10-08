@@ -50,11 +50,11 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="btn btn-ghost normal-case text-xl">
-                        <div className="flex items-center gap-1 md:gap-2 text-xl md:text-3xl text-rose-500 font-semibold ">
+                        <div className="flex items-center gap-1 md:gap-2  md:text-3xl text-rose-500 font-semibold ">
                             <h1 className="font-bold font-special ">
                                 Wedding Wizard
                             </h1>
-                            <h1 className='text-xl'>
+                            <h1 className='md:text-3xl  '>
                                 <GiStairsCake></GiStairsCake>
                             </h1>
                         </div>
@@ -83,10 +83,10 @@ const Navbar = () => {
                         </div>
                             : <div className='flex gap-1 md:gap-2'>
                                 <Link to={'/login'}>
-                                    <button className='btn btn-outline btn-error btn-sm md:px-6'> Login </button>
+                                    <button className='btn btn-outline btn-error btn-xs md:btn-sm md:px-6'> Login </button>
                                 </Link>
                                 <Link to={'/register'}>
-                                    <button className='btn btn-outline btn-error btn-sm md:px-4'> Register </button>
+                                    <button className='btn  btn-outline btn-error btn-xs md:btn-sm md:px-4'> Register </button>
                                 </Link>
                             </div>
                         }

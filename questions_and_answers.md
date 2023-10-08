@@ -23,7 +23,7 @@ console.log(greetign);
 
 #### Answer: A `{}`
 
-<i>IN javascript we can assign value to a variable without declaring it.
+<i>In javascript we can assign value to a variable without declaring it.
 As the value of the variable greetign is an empty object , it is being logged in the console, </i>
 
 </p>
@@ -47,10 +47,10 @@ sum(1, "2");
 <details><summary><b>Answer: C </b></summary>
 <p>
 
-#### Answer: C `'12`
+#### Answer: C `'12'`
 
-<i>IN javascript if we sum a number and a string the output is a concatenated string of the number and string.
-Here number 1 and string 2 is concatenated and the output is '12'</i>
+<i>In javascript if we add a number and a string the output is a concatenated string of the number and string.
+Here number 1 and string 2 is concatenated thus the output is '12'</i>
 
 </p>
 </details>
@@ -102,9 +102,9 @@ console.log(sayHi());
 
 #### Answer: B: `Hi there, undefined`
 
-<i>The function sayHi always expects a name parameter to be passed when being called . But we called the function with out any arguments.
-In js, when we call functions without passing the expected arguments the parameters takes the value undefined
-so when called the function it returned `Hi there, undefined` </i>
+<i>The function sayHi expects a name parameter to be passed when being called . But we called the function with out any arguments.
+In js, when we call functions without passing the expected arguments the parameters takes the value undefined.
+So when called the function it returned `Hi there, undefined` </i>
 
 </p>
 </details>
@@ -132,7 +132,7 @@ console.log(count);
 
 #### Answer: C :3
 
-<i>Inside the loop we have a condition that the value of count will only increase if an elements of the array nums is truthy value , as the 0 is not a truthy the condition was not fullfilled , but it was fullfilled for the element 1 , 2 ,3 as a result the count was increased three times. Thus when we log the value of count to the console it will show 3</i>
+<i>Inside the forEach loop we have a condition that checks if the value of the current element of the array nums is a truthy value , and then will increase the value of count. As the 0 is not a truthy the condition was not fullfilled , but it was fullfilled for the element 1 , 2 ,3 as a result the count was increased three times. Thus when we log the value of count to the console it will show 3</i>
 
 </p>
 </details>
