@@ -39,8 +39,8 @@ const Register = () => {
             .then(res => {
                 console.log(res.user)
                 update(name, photo)
+                toast.success('Signed up', toastInfo)
                 navigate('/login')
-                return toast.success('Signed up', toastInfo)
 
             })
             .catch(error => {

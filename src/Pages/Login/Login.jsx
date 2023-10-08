@@ -54,16 +54,16 @@ const Login = () => {
     }
     return (
         <div className="" >
-            <div className="flex w-full flex-col justify-center h-screen items-center bg-white">
+            <div className="flex w-full flex-col justify-center min-h-[600px] items-center bg-white">
                 <div className="border w-4/5 lg:w-1/3 py-8 lg:py-16 rounded ">
                     <h1 className="text-3xl font-semibold px-8 text-rose-400">Login </h1>
                     <form onSubmit={handleLogin}>
-                        <div className="p-8 space-y-4 w-full">
+                        <div className="p-8 space-y-8 w-full">
 
-                            <div className="border-b-2 border-black">
+                            <div className="border-b-2 border-gray-700">
                                 <input className=" rounded  w-full border-none outline-none py-2 px-4" placeholder="Email" type="email" name="email" id="email" />
                             </div>
-                            <div className=" w-full border-b-2 relative border-black">
+                            <div className=" w-full border-b-2 relative border-gray-700">
                                 <input className="rounded w-full border-none outline-none py-2 pl-4 pr-8"
                                     type={showpass ? 'text' : 'password'} placeholder="password" name="password" id="password" />
                                 <span onClick={() => setShowPass(!showpass)}

@@ -75,7 +75,7 @@ const Navbar = () => {
                                     <li><a>{user.email}</a></li>
                                 </ul>
                             </div> */}
-                            <div className='w-9'>
+                            <div className='w-fit'>
                                 {user.photoURL ? <img src={user.photoURL} className='rounded w-8' alt="userImage" /> : <h1>{user.email}</h1>}
                             </div>
                             <div>
@@ -83,7 +83,7 @@ const Navbar = () => {
                                     {user.displayName ? user.displayName : ''}
                                 </p>
                             </div>
-                            <button onClick={handleLogOut}>Log Out </button>
+                            <button className='btn btn-sm btn-outline btn-error' onClick={handleLogOut}>Log Out </button>
                         </div>
                             : <Link to={'/login'}>
                                 <button className='btn btn-outline btn-error btn-sm md:px-8'> Login </button>
