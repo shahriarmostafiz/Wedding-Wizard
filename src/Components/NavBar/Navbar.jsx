@@ -26,14 +26,14 @@ const Navbar = () => {
             .catch(err => console.log(err.message))
     }
     const links = <>
-        <li className='hover:border-b-2 hover:border-rose-500 font-medium text-rose-500'><NavLink to={'/'}>Home</NavLink></li>
-        <li className='hover:border-b-2 hover:border-rose-500 font-medium text-rose-500'><NavLink to={'/about'}>About Us </NavLink></li>
-        <li className='hover:border-b-2 hover:border-rose-500 font-medium text-rose-500'><NavLink to={'/blog'}>Blog</NavLink></li>
+        <li className='hover:border-b-2 hover:border-rose-500 text-md  font-medium text-rose-500'><NavLink to={'/'}>Home</NavLink></li>
+        <li className='hover:border-b-2 hover:border-rose-500 text-md  font-medium text-rose-500'><NavLink to={'/about'}>About Us </NavLink></li>
+        <li className='hover:border-b-2 hover:border-rose-500 text-md font-medium text-rose-500'><NavLink to={'/blog'}>Blog</NavLink></li>
         {
             user &&
             <>
-                <li className='hover: hover:border-b-2 hover:border-rose-500 font-medium text-rose-500'><NavLink to={'/mySelection'}>My Selections</NavLink></li>
-                <li className='hover: hover:border-b-2 hover:border-rose-500 font-medium text-rose-500'><NavLink to={'/reviews'}>All the Reviews </NavLink></li>
+                <li className='hover: hover:border-b-2 hover:border-rose-500 text-md font-medium text-rose-500'><NavLink to={'/mySelection'}>My Selections</NavLink></li>
+                <li className='hover: hover:border-b-2 hover:border-rose-500 text-md font-medium text-rose-500'><NavLink to={'/reviews'}>All the Reviews </NavLink></li>
             </>
 
         }    </>
