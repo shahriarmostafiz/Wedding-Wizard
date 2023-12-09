@@ -5,3 +5,6 @@
 - Implementation of AOS package for animation
 - Dynamic banner based on screen sizes
 - Users can Sign in using google
+
+# Live Link 
+- [Link](https://wedding-wizard.web.app/)
